@@ -4,6 +4,7 @@ $open-sans: "Open Sans", sans-serif;
 $primary-color: rgb(17, 17, 17);
 $font-color: rgba(232, 232, 232, 0.95);
 $white: #ffffff;
+$small: 450px;
 
 * {
   font-family: $open-sans;
@@ -174,6 +175,28 @@ nav {
       -webkit-transform: translateY(15px);
       opacity: 0;
       transform: translateY(15px);
+    }
+  }
+}
+
+@media screen and (max-width: $small) {
+  .home-content {
+    .body-content {
+      h1 {
+        font-size: 3rem;
+
+        span {
+          font-size: 3rem;
+        }
+      }
+
+      p {
+        font-size: 1.5rem;
+
+        span {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 }

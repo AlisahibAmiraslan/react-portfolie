@@ -13,4 +13,49 @@ $font-color: rgba(232, 232, 232, 0.95);
 
 .about {
   width: 100%;
+  height: 100vh;
+  .about-me {
+    font-size: 2.8rem;
+    font-weight: bolder;
+  }
+
+  .know-me {
+    font-size: 0.9rem;
+    color: #333333;
+  }
+
+  .about-content {
+    .about-content-img {
+      .image {
+        max-width: 70%;
+        border: 2px solid $font-color;
+        box-sizing: border-box;
+        padding: 5px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .about-content-text {
+      border-bottom: 2px solid $font-color;
+      max-width: 95%;
+      span {
+        color: crimson;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      p {
+        color: #333333;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
