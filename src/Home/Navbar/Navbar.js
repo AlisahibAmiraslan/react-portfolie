@@ -28,7 +28,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a className="menu-items" href="/">
+              <a className="menu-items" href="#service">
                 Services
               </a>
             </li>

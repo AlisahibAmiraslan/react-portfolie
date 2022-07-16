@@ -13,9 +13,11 @@ function About() {
           </div>
         </div>
         <div className="about-content-text-part pt-10">
-          <div className="about-content-text md:mt-0 mt-10 md:text-left text-center p-2.5">
+          <div className="about-content-text md:text-left text-center p-2.5">
             <span>Who am i?</span>
-            <h2>I'm Ali Aslan, a Front-end Developer</h2>
+            <h2 className="font-extrabold text-3xl mt-2">
+              I'm Ali Aslan, a Front-end Developer
+            </h2>
             <p>
               I am a front-end developer live in Istanbul and i have been
               building noteworthy UX/UI designs and websites for years, which
