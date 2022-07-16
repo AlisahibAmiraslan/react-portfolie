@@ -3,7 +3,6 @@ import "./service.scss";
 import data from "./service-data";
 
 function Service() {
-  console.log(data);
   return (
     <section className="service flex pl-0 sm:pl-64 py-20 flex-col" id="service">
       <div className="title text-center">
