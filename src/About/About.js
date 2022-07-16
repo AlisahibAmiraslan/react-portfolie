@@ -17,12 +17,12 @@ function About() {
             <span>Who am i?</span>
             <h2>I'm Ali Aslan, a Front-end Developer</h2>
             <p>
-              I am a freelancer based in Istanbul and i have been building
-              noteworthy UX/UI designs and websites for years, which comply with
-              the latest design trends. I help convert a vision and an idea into
-              meaningful and useful products. Having a sharp eye for product
-              evolution helps me prioritize tasks, iterate fast and deliver
-              faster.
+              I am a front-end developer live in Istanbul and i have been
+              building noteworthy UX/UI designs and websites for years, which
+              comply with the latest design trends. I help convert a vision and
+              an idea into meaningful and useful products. Having a sharp eye
+              for product evolution helps me prioritize tasks, iterate fast and
+              deliver faster.
             </p>
           </div>
           <div className="grid md:grid-cols-2 grid-cols-1 mt-5 sm:pr-24 pr-0 p-2.5">
