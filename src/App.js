@@ -1,6 +1,7 @@
 import Home from "./Home/Home";
 import About from "./About/About";
 import Service from "./Service/Service";
+import Work from "./Work/Work";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Home />
       <About />
       <Service />
+      <Work />
     </>
   );
 }
