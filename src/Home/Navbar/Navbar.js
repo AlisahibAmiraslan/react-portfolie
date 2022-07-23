@@ -33,7 +33,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a className="menu-items" href="/">
+              <a className="menu-items" href="#portfolie">
                 Portfolio
               </a>
             </li>
