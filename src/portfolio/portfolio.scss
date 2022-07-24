@@ -35,3 +35,11 @@ $small: 450px;
     visibility: visible;
   }
 }
+
+.ReactModal__Overlay {
+  z-index: 999999;
+}
+
+.ReactModal__Content::-webkit-scrollbar {
+  display: none !important;
+}

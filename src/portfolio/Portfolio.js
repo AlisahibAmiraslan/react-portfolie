@@ -21,9 +21,11 @@ import Item6 from "./../images/item-6.jpg";
 const customStyles = {
   content: {
     width: "90%",
-    position: "relative",
+    position: "fixed",
     border: "none",
-    overflow: "hidden",
+    overflow: "scroll",
+    paddingTop: "40px",
+    left: "5px",
   },
 };
 
@@ -95,7 +97,7 @@ function Portfolio() {
                           >
                             <AiOutlineClose
                               onClick={closeModal}
-                              className="cursor-pointer absolute right-0 top-2 z-50 w-8 h-8 text-gray-400"
+                              className="cursor-pointer absolute sm:right-0 -right-2 sm:top-2 top-10 z-50 w-8 h-8 text-gray-400"
                             />
                             <div className=" sm:pl-52 pl:0 max-w-7xl m-auto">
                               <div className=" grid lg:grid-cols-2 grid-cols-1 gap-5">

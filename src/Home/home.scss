@@ -176,6 +176,17 @@ nav {
   }
 }
 
+.mobil-menu {
+  padding: 10px;
+  li {
+    padding: 10px;
+
+    a {
+      font-size: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: $small) {
   .home-content {
     .body-content {
