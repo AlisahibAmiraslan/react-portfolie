@@ -43,7 +43,7 @@ function Portfolio() {
   }
 
   return (
-    <div className="w-full pl-0 sm:pl-64">
+    <div className="w-full pl-0 lg:pl-64">
       <div className="title flex pt-20 flex-col text-center">
         <h1 className="sm:text-5xl text-2xl font-extrabold" id="portfolie">
           Portfolio

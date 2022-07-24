@@ -5,7 +5,7 @@ import Cv from "./cv/my-cv.pdf";
 
 function About() {
   return (
-    <div className="about flex pl-0 sm:pl-64 py-10 flex-col" id="about">
+    <div className="about flex pl-0 lg:pl-64 py-10 flex-col" id="about">
       <div className="about-content grid lg:grid-cols-2 grid-cols-1 py-10">
         <div className="about-content-img flex justify-center">
           <div className="image">

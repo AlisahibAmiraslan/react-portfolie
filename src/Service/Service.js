@@ -4,7 +4,7 @@ import data from "./service-data";
 
 function Service() {
   return (
-    <section className="service flex pl-0 sm:pl-64 py-20 flex-col" id="service">
+    <section className="service flex pl-0 lg:pl-64 py-20 flex-col" id="service">
       <div className="title text-center">
         <h1 className="sm:text-5xl text-3xl font-extrabold mb-5">
           My Services
