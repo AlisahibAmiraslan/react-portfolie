@@ -4,6 +4,7 @@ import Service from "./Service/Service";
 import Work from "./Work/Work";
 import Portfolio from "./portfolio/Portfolio";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Work />
       <Portfolio />
       <Contact />
+      <Footer />
     </>
   );
 }
