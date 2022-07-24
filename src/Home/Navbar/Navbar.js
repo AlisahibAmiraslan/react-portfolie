@@ -70,7 +70,7 @@ function Navbar() {
         </div>
       </header>
 
-      <div className="hamburger-menu w-full flex justify-start lg:hidden py-5 px-4 bg-black text-white fixed z-[100] flex-col">
+      <div className="hamburger-menu w-full flex justify-start lg:hidden py-5 px-4 text-white fixed z-[100] flex-col">
         {open ? (
           <FiMenu
             className="w-7 h-7 cursor-pointer hidden"

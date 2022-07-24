@@ -176,13 +176,17 @@ nav {
   }
 }
 
-.mobil-menu {
-  padding: 10px;
-  li {
-    padding: 10px;
+.hamburger-menu {
+  background-color: rgba(0, 0, 0, 0.9);
 
-    a {
-      font-size: 20px;
+  .mobil-menu {
+    padding: 10px;
+    li {
+      padding: 10px;
+
+      a {
+        font-size: 20px;
+      }
     }
   }
 }
