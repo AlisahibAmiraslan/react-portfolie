@@ -7,7 +7,16 @@ import "./portfolio.scss";
 import classNames from "../enums/Classnames";
 import { data } from "./data";
 import { AiOutlineClose } from "react-icons/ai";
-import Img from "./../images/item-1.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
+import Item1 from "./../images/item-1.jpg";
+import Item2 from "./../images/item-2.jpg";
+import Item3 from "./../images/item-3.jpg";
+import Item4 from "./../images/item-4.jpg";
+import Item5 from "./../images/item-5.jpg";
+import Item6 from "./../images/item-6.jpg";
 
 const customStyles = {
   content: {
@@ -70,7 +79,10 @@ function Portfolio() {
                       <div>
                         <a className="absolute top-0 left-0 flex justify-center items-center flex-col portfolie-link">
                           <h3 className="mb-4">{post.content}</h3>
-                          <button className="text-sm" onClick={openModal}>
+                          <button
+                            className="text-sm hover:border-b border-red-600"
+                            onClick={openModal}
+                          >
                             More Info
                           </button>
                         </a>
@@ -83,16 +95,44 @@ function Portfolio() {
                           >
                             <AiOutlineClose
                               onClick={closeModal}
-                              className="cursor-pointer absolute right-0 top-2 z-50 w-10 h-10"
+                              className="cursor-pointer absolute right-0 top-2 z-50 w-8 h-8 text-gray-400"
                             />
                             <div className=" sm:pl-52 pl:0 max-w-7xl m-auto">
-                              <div className=" grid md:grid-cols-2 grid-cols-1 gap-5">
+                              <div className=" grid lg:grid-cols-2 grid-cols-1 gap-5">
                                 <div>
-                                  <img src={Img} alt="" />
+                                  <Swiper
+                                    spaceBetween={30}
+                                    pagination={{
+                                      clickable: true,
+                                    }}
+                                    grabCursor={true}
+                                    loop={true}
+                                    modules={[Pagination]}
+                                    className="mySwiper"
+                                  >
+                                    <SwiperSlide>
+                                      <img src={Item1} alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                      <img src={Item2} alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                      <img src={Item3} alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                      <img src={Item4} alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                      <img src={Item5} alt="" />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                      <img src={Item6} alt="" />
+                                    </SwiperSlide>
+                                  </Swiper>
                                 </div>
                                 <div className="about-content-text-part">
                                   <div className="about-content-text md:text-left text-center">
-                                    <h2 className="font-extrabold text-4xl mb-10">
+                                    <h2 className="font-bold text-4xl mb-10 text-gray-800">
                                       {post.content}
                                     </h2>
                                     <p>
