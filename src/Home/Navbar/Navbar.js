@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Avatar from "./../../images/avatar.jpeg";
 import { Link } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
@@ -15,15 +15,17 @@ function Navbar() {
     setOpen(false);
   };
 
-  var btns = document.getElementsByClassName("menu-items");
+  useEffect(() => {
+    var btns = document.getElementsByClassName("menu-items");
 
-  for (let i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active");
-      this.className += " active";
-    });
-  }
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active");
+        this.className += " active";
+      });
+    }
+  }, []);
 
   return (
     <>
