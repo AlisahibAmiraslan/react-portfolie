@@ -15,6 +15,16 @@ function Navbar() {
     setOpen(false);
   };
 
+  var btns = document.getElementsByClassName("menu-items");
+
+  for (let i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active");
+      this.className += " active";
+    });
+  }
+
   return (
     <>
       <header className="lg:flex hidden justify-center items-center">
@@ -31,7 +41,7 @@ function Navbar() {
           <nav className="nav-menu">
             <ul>
               <li>
-                <a className="menu-items" href="#home">
+                <a className="menu-items active" href="#home">
                   Home
                 </a>
               </li>
