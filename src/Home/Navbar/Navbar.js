@@ -15,9 +15,9 @@ function Navbar() {
     setOpen(false);
   };
 
-  useEffect(() => {
-    var btns = document.getElementsByClassName("menu-items");
+  var btns = document.getElementsByClassName("menu-items");
 
+  const changeColorMenu = () => {
     for (let i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
@@ -25,6 +25,10 @@ function Navbar() {
         this.className += " active";
       });
     }
+  };
+
+  useEffect(() => {
+    changeColorMenu();
   }, []);
 
   return (
