@@ -126,33 +126,7 @@ function Navbar() {
             </li>
           </ul>
         ) : (
-          <ul className="mobil-menu hidden">
-            <li>
-              <a className="menu-items" href="#home">
-                Home
-              </a>
-            </li>
-            <li>
-              <a className="menu-items" href="#about">
-                About
-              </a>
-            </li>
-            <li>
-              <a className="menu-items" href="#service">
-                Services
-              </a>
-            </li>
-            <li>
-              <a className="menu-items" href="#portfolie">
-                Portfolio
-              </a>
-            </li>
-            <li>
-              <a className="menu-items" href="/#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
+          ""
         )}
       </div>
     </>
