@@ -19,7 +19,7 @@ const HomeContent = () => {
     <div className="home-content">
       <div className="body-content">
         <h1>
-          Ali <span>Aslan</span>
+          Ali <span>Aslanov</span>
         </h1>
         <p>
           I am a <span className="profession"></span>
