@@ -35,7 +35,7 @@ function About() {
               <span className="font-semibold mr-2">Email:</span>
               <a
                 href="mailto:alisahibamiraslan@gmail.com"
-                className="text-red-600"
+                className="text-green-600"
               >
                 alisahibamiraslan@gmail.com
               </a>
